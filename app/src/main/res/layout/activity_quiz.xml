@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0080FF"
+    tools:context=".QuizActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="284dp"
+        android:layout_height="181dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092"
+        app:srcCompat="@drawable/quizbg" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question: Which Indian Premier League (IPL) team did Virat Kohli captain for several years?"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.112" />
+
+
+    <Button
+        android:id="@+id/Option1"
+        android:layout_width="173dp"
+        android:layout_height="57dp"
+        android:text="MI"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Option2"
+        app:layout_constraintEnd_toEndOf="@+id/question"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/question"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/Option2"
+        android:layout_width="173dp"
+        android:layout_height="57dp"
+        android:text="CSK"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Option3"
+        app:layout_constraintStart_toStartOf="@+id/Option1"
+        app:layout_constraintTop_toBottomOf="@+id/Option1" />
+
+    <Button
+        android:id="@+id/Option3"
+        android:layout_width="173dp"
+        android:layout_height="57dp"
+        android:text="RCB"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Option4"
+        app:layout_constraintEnd_toEndOf="@+id/Option2"
+        app:layout_constraintStart_toStartOf="@+id/Option2"
+        app:layout_constraintTop_toBottomOf="@+id/Option2" />
+
+    <Button
+        android:id="@+id/Option4"
+        android:layout_width="173dp"
+        android:layout_height="57dp"
+        android:text="KKR"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Option3"
+        app:layout_constraintTop_toBottomOf="@+id/Option3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
